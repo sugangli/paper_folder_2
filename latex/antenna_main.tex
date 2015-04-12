@@ -1,0 +1,356 @@
+
+\documentclass[10pt]{article}
+\usepackage{rotate,page,epsf,epsfig,url,subfigure,wrapfig,algorithm2e}
+\usepackage[sc]{mathpazo}
+\usepackage{amsfonts,amssymb,graphicx}
+\usepackage{comment}
+
+
+
+% Using 10.5 fonts over 11pt skips. (Actual lines/inch is achieved also with
+% the linespread above
+%\renewcommand{\normalsize}{\fontsize{10.5pt}{11pt}\selectfont}
+
+\usepackage{vmargin}
+\setpapersize{USletter}
+\setmarginsrb{1in}{1in}{1in}{1in}%
+%{0in}{0in}{0in}{0.05in}
+%\setmarginsrb{0.9in}{0.8in}{.9in}{.9in}%
+{0in}{0in}{0in}{0.0in}
+
+\linespread{1.03}% use this to control line spacing
+% changed from 1.1
+
+
+%%\textheight 233truemm \textwidth  172truemm
+%%\linespread{1.1} %% use this to control line spacing
+
+
+% removed times -- since apparently not allowed by NSF
+%\newcounter{definition}
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{axiom}[theorem]{Axiom}
+%\newtheorem{case}[theorem]{Case}
+%\newtheorem{claim}[theorem]{Claim}
+%\newtheorem{conclusion}[theorem]{Conclusion}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{remark}[theorem]{Remark}
+%\def\proof{\noindent\hspace{2em}{\it Proof: }}
+
+\newcommand{\Geotags}{GLUE}
+
+\newcommand{\aiaaJGCD}{AIAA Journal of Guidance, Control and Dynamics}
+\newcommand{\ieeeTCST}{IEEE Transactions on Control Systems Technology}
+\newcommand{\ieeeTITS}{IEEE Transactions on on Intelligent Transportation Systems}
+\newcommand{\ieeeTAC}{IEEE Transactions on Automatic Control}
+\newcommand{\TransResB}{Transportation Research - B}
+\newcommand{\ieeeCSM}{IEEE Control Systems Magazine}
+\newcommand{\JCP}{Journal of Computational Physics}
+\newcommand{\JFM}{Journal of Fluid Mechanics}
+\newcommand{\ECC}{Proceedings of the European Control Conference}
+\newcommand{\ACCotwo}{American Control Conference}
+\newcommand{\ACCofour}{American Control Conference}
+\newcommand{\CDCothree}{Proceedings of the $42^{\text{nd}}$ IEEE Conference on Decision and Control}
+\newcommand{\CDCnintyfive}{Proceedings of the $34^{\text{th}}$ IEEE Conference on Decision and Control}
+\newcommand{\ESAIM}{ESAIM: {C}ontrol, {O}ptimisation and{C}alculus of {V}ariations}
+\newcommand{\SysContLet}{Systems \& Control Letters}
+\newcommand{\SIAMJCO}{SIAM Journal of Control Optimization}
+\newcommand{\procRSLsAMPS}{Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences}
+
+\newenvironment{itemizer}{\begin{itemize}\setlength{\parsep}{0cm}\setlength{\itemsep}{-.3em}}{\end{itemize}}
+\newenvironment{enumerator}{\begin{enumerate}\setlength{\itemsep}{-0.15cm}}{\end{enumerate}}
+
+%%% below are from Jun
+
+\usepackage[cmex10]{amsmath}
+
+\newfont{\Fr}{eufm10 scaled\magstep1}
+\newfont{\Sc}{eusm10 scaled\magstep1}
+\newfont{\Bb}{msbm10 scaled\magstep1}
+\newfont{\Er}{eurm10 scaled\magstep1}
+\newfont{\Msa}{msam10 scaled\magstep1}
+\newcommand{\eop}{{\Msa \symbol{04}}}
+\newcommand{\qed}{{\Msa \symbol{04}}}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{proof}[theorem]{Proof}
+
+
+
+\newenvironment{prf}{{\bf Proof.\ }}{\eop \medskip}
+\newenvironment{prf2}{{\bf Proof.\ }}{\medskip}
+
+
+
+\newcommand{\beeq}[1]{\begin{equation} \label{#1}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beeqs}{\begin{eqnarray*}}
+\newcommand{\eeqs}{\end{eqnarray*}}
+\renewcommand{\(}{\begin{eqnarray*}}
+\renewcommand{\)}{\end{eqnarray*}}
+\newcommand{\beeqn}{\begin{eqnarray}}
+\newcommand{\eeqn}{\end{eqnarray}}
+\newcommand{\sothat}{\\ \Rightarrow~~~~ &&}
+\newcommand{\nexteqline}{\\ &=&}
+\newcommand{\eqand}{\mbox{~~~and~~~}}
+\newcommand{\eqwhere}{\mbox{~~~where~~~}}
+\newcommand{\eqor}{\mbox{~~~or~~~}}
+
+\newcommand{\refth}[1]{Theorem~\ref{#1}}
+\newcommand{\reflm}[1]{Lemma~\ref{#1}}
+\newcommand{\refco}[1]{Corollary~\ref{#1}}
+\newcommand{\refprop}[1]{Proposition~\ref{#1}}
+\newcommand{\refsection}[1]{Section~\ref{#1}}
+\newcommand{\reffig}[1]{Fig.~\ref{#1}}
+\newcommand{\refeq}[1]{(\ref{#1})}
+
+
+
+\renewcommand{\quad}{\hspace*{3mm}}
+\renewcommand{\qquad}{\hspace*{5mm}}
+
+
+\newcommand{\lp}{\left(  }
+\newcommand{\rp}{\right) }
+\newcommand{\lb}{\left\{  }
+\newcommand{\rb}{\right\} }
+\newcommand{\lbr}{\left[  }
+\newcommand{\rbr}{\right] }
+\newcommand{\lf}{\left\lfloor}
+\newcommand{\rf}{\right\rfloor}
+\newcommand{\lc}{\left\lceil}
+\newcommand{\rc}{\right\rceil}
+
+
+\newcounter{cnt1}
+\newcounter{cnt2}
+\newcounter{cnt3}
+\newcounter{cnt4}
+\newcounter{cnt5}
+\newcounter{cnta}
+
+\newcommand{\beenu}
+{
+\begin{list}{\arabic{cnt1}.}
+{\usecounter{cnt1}
+\leftmargin 4mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 0pt
+\parsep 0pt
+\itemsep 0pt}
+}
+\newcommand{\eenu}{\end{list}}
+
+\newcommand{\beenub}
+{
+\begin{list}{\arabic{cnt1}-\arabic{cnt2}.}
+{
+\leftmargin  4mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 0pt
+\parsep 0pt
+\itemsep 0pt}
+}
+\newcommand{\eenub}{\end{list}}
+\newcommand{\itemb}{\addtocounter{cnt2}{1} \item}
+\newcommand{\itembb}{\setcounter{cnt2}{1} \item}
+
+\newcommand{\beenuc}
+{
+\begin{list}{\arabic{cnt1}-\arabic{cnt2}-\arabic{cnt3}.}
+{
+\leftmargin  4mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 0pt
+\parsep 0pt
+\itemsep 0pt}
+}
+\newcommand{\eenuc}{\end{list}}
+\newcommand{\itemc}{\addtocounter{cnt3}{1} \item}
+\newcommand{\itemcc}{\setcounter{cnt3}{1} \item}
+
+\newcommand{\beenud}
+{
+\begin{list}{\arabic{cnt1}-\arabic{cnt2}-\arabic{cnt3}-\arabic{cnt4}.}
+{
+\leftmargin  4mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 0pt
+\parsep 0pt
+\itemsep 0pt}
+}
+\newcommand{\eenud}{\end{list}}
+\newcommand{\itemd}{\addtocounter{cnt4}{1} \item}
+\newcommand{\itemdd}{\setcounter{cnt4}{1} \item}
+
+\newcommand{\beenue}
+{
+\begin{list}{\arabic{cnt1}-\arabic{cnt2}-\arabic{cnt3}-\arabic{cnt4}-\arabic{cnt5}.}
+{
+\leftmargin  4mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 0pt
+\parsep 0pt
+\itemsep 0pt}
+}
+\newcommand{\eenue}{\end{list}}
+\newcommand{\iteme}{\addtocounter{cnt5}{1} \item}
+\newcommand{\itemee}{\setcounter{cnt5}{1} \item}
+
+\newcommand{\beitm}
+{
+\begin{list}{$\bullet$}
+{
+\leftmargin  2mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 3pt
+\parsep 0pt
+\itemsep 2pt}
+}
+\newcommand{\eitm}{\end{list}}
+
+\newcommand{\beitma}
+{
+\begin{list}{(\alph{cnta})~~}
+{\usecounter{cnta}
+\labelsep 0mm
+\leftmargin  2mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 0pt
+\parsep 0pt
+\itemsep 0pt}
+}
+\newcommand{\eitma}{\end{list}}
+
+\newcommand{\litem}[1]{\item \label{it:#1}}
+
+\newcommand{\bbegin}{{\bf begin~}}
+\newcommand{\bend}{{\bf end~}}
+\newcommand{\bif}{{\bf if~}}
+\newcommand{\bthen}{{\bf then~}}
+\newcommand{\belse}{{\bf else~}}
+\newcommand{\bfor}{{\bf for~}}
+\newcommand{\bto}{{\bf to~}}
+\newcommand{\bdo}{{\bf do~}}
+\newcommand{\band}{{\bf and~}}
+\newcommand{\bor}{{\bf or~}}
+\newcommand{\breturn}{{\bf return~}}
+\newcommand{\bwhile}{{\bf while~}}
+\newcommand{\brepeat}{{\bf repeat~}}
+\newcommand{\buntil}{{\bf until~}}
+\newcommand{\spca}{{\hspace*{3mm}}}
+\newcommand{\spcb}{{\hspace*{6mm}}}
+\newcommand{\spcc}{{\hspace*{9mm}}}
+\newcommand{\spcd}{{\hspace*{12mm}}}
+\newcommand{\spce}{{\hspace*{15mm}}}
+
+\newcommand{\bealg}
+{
+\begin{list}{}
+{
+\leftmargin 15mm
+\rightmargin 15mm
+\setlength{\leftmargin}{\leftmargin}
+\topsep 20pt
+\parsep 0pt
+\itemsep 0pt}
+\item
+\begin{footnotesize}
+}
+\newcommand{\ealg}{\end{footnotesize} \end{list}}
+
+
+
+
+\newcommand{\E}{\mbox{\Bb E}}
+\newcommand{\Z}{\mbox{\Bb Z}}
+\newcommand{\N}{\mbox{\Bb N}}
+\newcommand{\Q}{\mbox{\Bb Q}}
+\newcommand{\R}{\mbox{\Bb R}}
+\newcommand{\C}{\mbox{\Bb C}}
+\newcommand{\PP}{\mbox{\boldmath $P$}}
+\newcommand{\NP}{\mbox{\rm{\bf NP}}}
+\newcommand{\NC}{\mbox{\rm{\bf NC}}}
+\newcommand{\OO}{{\cal O}}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\ep}{\epsilon}
+
+\newcommand{\subsetnoneq}{\mbox{\Bb \symbol{40}}}
+\newcommand{\supsetnoneq}{\mbox{\Bb \symbol{41}}}
+\newcommand{\notdiv}{\mbox{\Bb ~\symbol{45}~}}
+\newcommand{\divisible}{~|~}
+\newcommand{\empt}{\mbox{\Bb \symbol{63}}}
+
+\newcommand{\FrP}{\mbox{\Fr P}}
+\newcommand{\FrQ}{\mbox{\Fr Q}}
+\newcommand{\FrA}{\mbox{\Fr A}}
+\newcommand{\FrB}{\mbox{\Fr B}}
+\newcommand{\Frp}{\mbox{\Fr p}}
+\newcommand{\Frq}{\mbox{\Fr q}}
+\newcommand{\Fra}{\mbox{\Fr a}}
+\newcommand{\Frb}{\mbox{\Fr b}}
+
+
+
+
+
+\begin{document}
+
+\setcounter{page}{1}
+\def\mysection{A}
+\nsffoot \nsftitle{Project Summary}
+
+\begin{center}
+\vspace{-6mm}
+{\bf CPS: Synergy: Deep Tomography with Many-Antenna MIMO Receivers}
+\end{center}
+\vspace*{-2mm}
+\input{antenna_summary}
+\vspace{-6pt}
+%\begin{center}
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%Yanyong Zhang, Richard Martin, Wade Trappe, Richard Howard & {\bf WINLAB, Rutgers
+%University}\\
+%\end{tabular*}
+%\end{center}
+\vspace*{.1in}
+\pagebreak
+
+
+\setcounter{page}{1}
+\def\mysection{C}
+\nsffoot \nsftitle{PROJECT DESCRIPTION}
+\def\thesection{\arabic{section}}
+\def\thesubsection{\arabic{section}.\arabic{subsection}}
+\def\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\input{antenna_intro}
+\input{antenna_overview}
+\input{antenna_physical}
+\input{antenna_mac}
+\input{antenna_evaluation}
+\input{antenna_education}
+\input{antenna_prior}
+
+%\newpage
+%\setcounter{page}{1}
+%\def\mysection{D}
+%\nsffoot \nsftitle{COLLABORATION PLAN}
+%\input{TO13_collaboration}
+
+\newpage
+\setcounter{page}{1}
+\def\mysection{E}
+\bibliographystyle{plain}
+\bibliography{}
+\end{document}

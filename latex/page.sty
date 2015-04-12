@@ -1,0 +1,32 @@
+%%%-PAGE.STY------------------------------------------------------------%%%
+\font\titf=phvr at 12pt	%Font for page titles
+\font\botf=phvr at 10pt	%Font for page bottoms
+
+\newcounter{nsect}
+\newcounter{nsfform}
+\newcommand{\nsfinfo}{}
+\def\ps@plain{\let\@mkboth\markboth
+\def\@oddhead{}\def\@evenhead{}
+\def\@oddfoot{\parbox{\textwidth}{\rule{\textwidth}{.25mm} \\
+	\botf \centerline{\mysection-\thepage}
+	}}}
+\pagestyle{plain}
+
+\def\tocfoot{\def\@oddfoot{\parbox{\textwidth}{\rule{\textwidth}{.25mm} \\
+	\botf \nsfinfo \hfill 
+	}}}
+
+\def\redefnsf{
+	\def\@oddfoot{\hfill {\mysection-\thepage} \hfill}}
+
+\def\nsffoot{
+	\def\@oddfoot{\parbox{\textwidth}{\rule{\textwidth}{.25mm} \\
+	\botf \centerline{\mysection-\thepage}
+        	}}}
+
+\newcommand{\nsftitle}[1]{
+\begin{center}
+{\titf #1}\\ \rule[1.5ex]{\textwidth}{.25mm}
+\end{center}
+}
+%%%-PAGE.STY------------------------------------------------------------%%%
