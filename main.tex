@@ -1,0 +1,172 @@
+\documentclass[11pt]{article}
+
+\usepackage{times,epsf,epsfig,textcomp,amsmath,amssymb,subfigure,wrapfig,cite,moreverb}
+\usepackage{comment}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{url}
+\usepackage{color,soul}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{graphics}
+\usepackage{listings}
+\usepackage{paralist}
+\usepackage{todonotes}
+\usepackage{xspace}
+%\usepackage[bookmarks, breaklinks=true, colorlinks=true, plainpages = false,
+%  citecolor = blue, urlcolor = blue, filecolor = blue,]{hyperref}
+
+\usepackage[labelfont=bf,font=small]{caption}
+\usepackage{multirow}
+
+\definecolor{tableYellow}{rgb}{.996, 1, .8549}
+\definecolor{tableBlue}{rgb}{0.8823, .9098, 1}
+\definecolor{tableRed}{rgb}{1, .9255, .9019}
+\definecolor{tableGreen}{rgb}{.9176, 1, .9216}
+\definecolor{tableGray}{rgb}{.902, .902, .902}
+\definecolor{dragos}{rgb}{1,0.5,0}
+\setcounter{tocdepth}{2}
+\def\tablestrut{\vrule height1.25em depth0pt width0pt}
+\def\topfraction{.9}
+\def\bottomfraction{.9}
+\def\textfraction{.1}
+
+\textheight 8.7in \textwidth 6.5in \oddsidemargin +0in \evensidemargin
+0in \topmargin -.3in \advance \topmargin-\baselineskip \headsep .5in
+\marginparwidth .7in \marginparsep .15in
+
+\floatsep 8pt plus 2pt minus 2pt \textfloatsep 8pt plus 2pt minus
+2pt
+
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+   {-3ex \@plus -1ex \@minus -.2ex}%
+   {1.7ex \@plus.2ex}%
+   {\normalfont\large\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+   {-2.5ex\@plus -1ex \@minus -.2ex}%
+   {1ex \@plus .2ex}%
+   {\normalfont\normalsize\bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{2}{\z@}%
+   {-1ex\@plus -1ex \@minus -.2ex}%
+   {0.3ex \@plus .2ex}%
+   {\normalfont\normalsize\bfseries}}
+
+\newcommand\minisection{\@startsection{subsubsection}{4}{\z@}%
+   {1ex\@plus 0ex \@minus 0ex}%
+   {-1.5ex \@plus .2ex}%
+   {\normalfont\normalsize\bfseries}}
+
+\setcounter{secnumdepth}{2} \makeatother
+
+
+
+%------------Formatting----------
+\newcommand{\Paragraph}[1]{\vskip 6pt\noindent\textbf{#1. }}
+\newcommand\paratitle[1]{\textit{\textbf{#1}}}
+\newcommand\itno[1]{({\em #1})}
+\newcommand\itemno[1]{({\em #1})}
+
+\newcommand\copyfromuser{\url{copy_from_user}}
+\newcommand\copytouser{\url{copy_to_user}}
+\newcommand\mappage{\url{map_page}}
+\newcommand\unmappage{\url{unmap_page}}
+
+%%%%%%%%%%%%%%% smitemize %%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{smitemize}%
+  {\begin{list}{$\bullet$}%
+     {\setlength{\parsep}{0pt}%
+      \setlength{\topsep}{0pt}%
+      \setlength{\itemsep}{2pt}}}%
+  {\end{list}}
+
+%%%%%%%%%%%%%%% custom spacing %%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\customvspace}{\vspace{0in}}
+\newcommand{\customvspacetwo}{\vspace{0.01in}}
+\newcommand{\intercolumnhspace}{\hspace{0.64cm}} % the intercolumn spacing
+
+
+\input{proposal-specific-materials}
+
+
+\begin{document}
+
+\title{\bf \large \projecttitle}
+
+\author{\authors}
+
+\maketitle
+
+\pagenumbering{arabic}
+\def\thepage{C-\arabic{page}}
+
+\tableofcontents
+
+\pagebreak \clearpage \pagenumbering{arabic}
+\def\thepage{\arabic{page}}
+\thispagestyle{empty}
+
+\input{summary}
+
+\pagebreak
+
+\pagebreak \clearpage \pagenumbering{arabic}
+\def\thepage{\arabic{page}}
+
+
+\begin{center}
+{{\bf \projecttitle}}\\
+\vspace{+2mm}
+{\large {\bf Project Description}} \\
+\end{center}
+
+\graphicspath{{figs/}}
+
+\input{introduction}
+\pagebreak
+
+\input{testbed}
+
+\pagebreak
+%\input{related}
+\input{boilerplates/education}
+\input{boilerplates/prior}
+
+% Collaboration Plan
+\clearpage
+\pagenumbering{arabic}
+\def\thepage{C-\arabic{page}}
+\input{boilerplates/collaborationplan}
+
+% Data Management Plan
+\clearpage
+\pagenumbering{arabic}
+\def\thepage{D-\arabic{page}}
+\input{boilerplates/datamanagementplan}
+
+% Postdoc Mentoring Plan
+\clearpage
+\pagenumbering{arabic}
+\def\thepage{M-\arabic{page}}
+\input{boilerplates/postdoc}
+
+% Facilities
+\clearpage
+\pagenumbering{arabic}
+\def\thepage{F-\arabic{page}}
+\input{boilerplates/facilities}
+
+
+\clearpage \pagenumbering{arabic}
+\def\thepage{R-\arabic{page}}
+
+\bibliographystyle{unsrt}
+
+\bibliography{bib/abr,bib/zhong,bib/broader} 
+
+
+\end{document}
+
+
