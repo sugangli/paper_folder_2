@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.30)  23 APR 2015 23:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.5)  24 APR 2015 14:07
 entering extended mode
 **main.tex
-(C:\Users\yanyong\Documents\GitHub\town_tomography\main.tex
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -722,8 +722,8 @@ Package caption Info: wrapfig package is loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen195
 )
-(C:\Users\yanyong\Documents\GitHub\town_tomography\proposal-specific-materials.
-tex) (C:\Users\yanyong\Documents\GitHub\town_tomography\main.aux)
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\proposal-specific-materials.
+tex) (C:\Users\yyzhang\Documents\GitHub\town_tomography\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
@@ -780,21 +780,21 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 100.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(C:\Users\yanyong\Documents\GitHub\town_tomography\main.toc
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\main.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 )
 \tf@toc=\write5
  [1
 
-{C:/Users/yanyong/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\summary.tex) [1
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\summary.tex) [1
 
 ]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\introduction.tex) [1
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\introduction.tex) [1
 
 ]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\testbed.tex
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\testbed.tex
 <figs/argosbs.pdf, id=17, 727.71875pt x 597.23125pt>
 File: figs/argosbs.pdf Graphic file (type pdf)
  <use figs/argosbs.pdf>
@@ -835,9 +835,9 @@ LaTeX Warning: Citation `shepard2012mobicom' on page 2 undefined on input line
 LaTeX Warning: Citation `shepard2012mobicom' on page 2 undefined on input line 
 34.
 
-[2 <C:/Users/yanyong/Documents/GitHub/town_tomography/figs/argosbs.pdf> <C:/Use
-rs/yanyong/Documents/GitHub/town_tomography/figs/ArgosV2-Front-full.jpg> <C:/Us
-ers/yanyong/Documents/GitHub/town_tomography/figs/ArgosV2-Back-full.jpg>]
+[2 <C:/Users/yyzhang/Documents/GitHub/town_tomography/figs/argosbs.pdf> <C:/Use
+rs/yyzhang/Documents/GitHub/town_tomography/figs/ArgosV2-Front-full.jpg> <C:/Us
+ers/yyzhang/Documents/GitHub/town_tomography/figs/ArgosV2-Back-full.jpg>]
 
 LaTeX Warning: Citation `ArgosV2' on page 3 undefined on input line 44.
 
@@ -853,9 +853,9 @@ File: figs/WSD.png Graphic file (type png)
 <use figs/WSD.png>
 Package pdftex.def Info: figs/WSD.png used on input line 79.
 (pdftex.def)             Requested size: 206.6199pt x 146.35326pt.
-) [3 <C:/Users/yanyong/Documents/GitHub/town_tomography/figs/ArgosMobile.jpg> <
-C:/Users/yanyong/Documents/GitHub/town_tomography/figs/WSD.png>]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\boilerplates/education.tex
+) [3 <C:/Users/yyzhang/Documents/GitHub/town_tomography/figs/ArgosMobile.jpg> <
+C:/Users/yyzhang/Documents/GitHub/town_tomography/figs/WSD.png>]
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\boilerplates/education.tex
 
 LaTeX Warning: Citation `jsspp03' on page 4 undefined on input line 10.
 
@@ -923,7 +923,7 @@ LaTeX Warning: Citation `crawdad' on page 5 undefined on input line 26.
 
 LaTeX Warning: Citation `recgdownload' on page 5 undefined on input line 26.
 
-) (C:\Users\yanyong\Documents\GitHub\town_tomography\boilerplates/prior.tex
+) (C:\Users\yyzhang\Documents\GitHub\town_tomography\boilerplates/prior.tex
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 7.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
@@ -1013,7 +1013,7 @@ LaTeX Warning: Citation `samsung2013fdmimo' on page 5 undefined on input line 2
 LaTeX Warning: Citation `fdmimo' on page 5 undefined on input line 26.
 
 ) [5]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\boilerplates/collaborationpl
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\boilerplates/collaborationpl
 an.tex
 
 LaTeX Warning: Citation `rahmati2007mobilehci' on page C-1 undefined on input l
@@ -1077,15 +1077,15 @@ LaTeX Warning: Citation `owlspace' on page C-1 undefined on input line 59.
 
 ) [1
 
- <C:/Users/yanyong/Documents/GitHub/town_tomography/figs/collaboration.pdf> <C:
-/Users/yanyong/Documents/GitHub/town_tomography/figs/taskmanagement.pdf
+ <C:/Users/yyzhang/Documents/GitHub/town_tomography/figs/collaboration.pdf> <C:
+/Users/yyzhang/Documents/GitHub/town_tomography/figs/taskmanagement.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/yanyong/Documents/GitHub/town_tomog
+pdfTeX warning: pdflatex.exe (file C:/Users/yyzhang/Documents/GitHub/town_tomog
 raphy/figs/taskmanagement.pdf): PDF inclusion: multiple pdfs with page group in
 cluded in a single page
->] [2 <C:/Users/yanyong/Documents/GitHub/town_tomography/figs/task-timeline.pdf
+>] [2 <C:/Users/yyzhang/Documents/GitHub/town_tomography/figs/task-timeline.pdf
 >]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\boilerplates/datamanagementp
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\boilerplates/datamanagementp
 lan.tex
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 13.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
@@ -1094,11 +1094,11 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 [1
 
 ]) [2]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\boilerplates/postdoc.tex)
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\boilerplates/postdoc.tex)
 [1
 
 ]
-(C:\Users\yanyong\Documents\GitHub\town_tomography\boilerplates/facilities.tex
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\boilerplates/facilities.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
@@ -1107,14 +1107,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 ]
 No file main.bbl.
-(C:\Users\yanyong\Documents\GitHub\town_tomography\main.aux)
+(C:\Users\yyzhang\Documents\GitHub\town_tomography\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  16489 strings out of 493921
- 310116 string characters out of 3144869
+ 310116 string characters out of 3144871
  340561 words of memory out of 3000000
  19384 multiletter control sequences out of 15000+200000
  33682 words of font info for 78 fonts, out of 3000000 for 9000
@@ -1126,7 +1126,7 @@ x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 3043927 bytes).
+Output written on main.pdf (13 pages, 3044222 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
